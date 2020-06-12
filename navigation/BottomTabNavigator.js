@@ -30,7 +30,7 @@ export default function BottomTabNavigator({ navigation, route }) {
         options={{
           title: "Home",
           tabBarIcon: ({ focused }) => (
-            <TabBarIcon focused={focused} name="ios-home" />
+            <TabBarIcon focused={focused} name="ios-speedometer" />
           ),
         }}
       />
@@ -67,7 +67,7 @@ function getHeaderTitle(route) {
 
   switch (routeName) {
     case 'Home':
-      return '💰Hello Stock💰';
+      return 'Overview';
     case 'Stock':
       return 'Stock';
     case 'News':

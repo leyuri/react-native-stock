@@ -17,7 +17,7 @@ export default class CardHeaderFooterExample extends Component {
               </Body>
             </CardItem>
             <CardItem footer>
-              <Text>Enjoy</Text>
+              {/* <Text>💰💰💰💰💰💰</Text> */}
             </CardItem>
          </Card>
 

@@ -2,8 +2,16 @@ import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import * as React from 'react';
 
 import TabBarIcon from '../components/TabBarIcon';
+
 import HomeScreen from '../screens/HomeScreen';
 import LinksScreen from '../screens/LinksScreen';
+
+import MyScreen from '../screens/MyScreen';
+import OverviewScreen from '../screens/OverviewScreen';
+import NewsScreen from '../screens/NewsScreen';
+import StockScreen from '../screens/StockScreen';
+
+
 
 const BottomTab = createBottomTabNavigator();
 const INITIAL_ROUTE_NAME = 'Home';
@@ -18,18 +26,36 @@ export default function BottomTabNavigator({ navigation, route }) {
     <BottomTab.Navigator initialRouteName={INITIAL_ROUTE_NAME}>
       <BottomTab.Screen
         name="Home"
-        component={HomeScreen}
+        component={OverviewScreen}
         options={{
-          title: 'Get Started',
-          tabBarIcon: ({ focused }) => <TabBarIcon focused={focused} name="md-code-working" />,
+          title: "Home",
+          tabBarIcon: ({ focused }) => (
+            <TabBarIcon focused={focused} name="ios-home" />
+          ),
         }}
       />
       <BottomTab.Screen
-        name="Links"
-        component={LinksScreen}
+        name="Stock"
+        component={StockScreen}
         options={{
-          title: 'Resources',
-          tabBarIcon: ({ focused }) => <TabBarIcon focused={focused} name="md-book" />,
+          title: 'Stock',
+          tabBarIcon: ({ focused }) => <TabBarIcon focused={focused} name="ios-pulse" />,
+        }}
+      />
+      <BottomTab.Screen
+        name="News"
+        component={NewsScreen}
+        options={{
+          title: 'News',
+          tabBarIcon: ({ focused }) => <TabBarIcon focused={focused} name="ios-podium" />,
+        }}
+      />
+      <BottomTab.Screen
+        name="My"
+        component={MyScreen}
+        options={{
+          title: 'My',
+          tabBarIcon: ({ focused }) => <TabBarIcon focused={focused} name="ios-person" />,
         }}
       />
     </BottomTab.Navigator>
@@ -41,8 +67,13 @@ function getHeaderTitle(route) {
 
   switch (routeName) {
     case 'Home':
-      return 'How to get started';
-    case 'Links':
-      return 'Links to learn more';
+      return '💰Hello Stock💰';
+    case 'Stock':
+      return 'Stock';
+    case 'News':
+      return 'News';
+    case 'My':
+      return 'My Page';
+      
   }
 }

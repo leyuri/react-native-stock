@@ -65,7 +65,7 @@ export const OverviewStyle = StyleSheet.create({
         flex: 1,
         borderWidth: 1, 
         alignItems: 'center',
-        backgroundColor: 'green',
+        backgroundColor: '#2590D5',
         fontWeight: 'bold',
         margin: 5,
         borderRadius: 5

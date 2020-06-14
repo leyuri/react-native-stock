@@ -71,7 +71,7 @@ function getHeaderTitle(route) {
     case 'Stock':
       return 'Stock';
     case 'News':
-      return 'News';
+      return 'General News';
     case 'My':
       return 'My Page';
       

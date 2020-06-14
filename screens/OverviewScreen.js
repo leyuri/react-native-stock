@@ -72,7 +72,7 @@ class Overview extends React.Component {
             <View style={OverviewStyle.positionRightCell}>
               <Text tyle={OverviewStyle.price}>{item.current_price}</Text>
               <Text style={OverviewStyle.subheading}>
-                <Ionicons name="md-arrow-dropup" size={32} color="green"></Ionicons>
+                <Ionicons name="md-arrow-dropup" size={32} color="#2590D5"></Ionicons>
                 {(item.change_today * 100).toFixed(2)}</Text>
             </View>
           </View>

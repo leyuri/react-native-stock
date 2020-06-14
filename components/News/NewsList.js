@@ -6,10 +6,7 @@ import { Container, Header, Content, Card, CardItem, Thumbnail, Text, Button, Ic
 const apple = require("../../assets/images/apple.png")
 const amazon = require("../../assets/images/amazon.jpeg")
 const sumsun = require("../../assets/images/sumsun.png")
-
 const sample = require("../../assets/images/stock.png")
-// const profile = require("../../assets/images/profile.png")
-
 
 export default class CardImageExample extends Component {
   render() {
